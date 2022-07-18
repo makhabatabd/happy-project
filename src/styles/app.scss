@@ -1,0 +1,87 @@
+.app {
+    position: relative;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        padding: 141px 95px;
+
+        @media screen and (max-width:$grid-breakpoints-xl) {
+            padding: 141px 38px;
+        }
+
+        @media screen and (max-width:$grid-breakpoints-lg) {
+            justify-content: center;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        top: 15%;
+        right: 16%;
+
+        @media screen and (max-width:$grid-breakpoints-xl) {
+            right: 2%;
+        }
+
+        @media screen and (max-width:$grid-breakpoints-lg) {
+            display: none;
+        }
+    }
+
+    &__image img {
+        width: 376px;
+    }
+
+    &__context img {
+        margin-bottom: 11px;
+    }
+
+    &__context h2 {
+        font-size: 54px;
+        line-height: 111%;
+        margin: 0 0 17px 0;
+        width: 400px;
+    }
+
+    &__context p {
+        line-height: 24px;
+        margin: 0 0 20px 0;
+        width: 394px;
+    }
+
+    &__buttons {
+        width: 148px;
+        border: none;
+        margin-left: 6px;
+        margin-bottom: 14px;
+    }
+}
+
+@media screen and (max-width:$grid-breakpoints-xs) {
+    .app__inner {
+        display: block;
+        padding: 80px 0;
+    }
+
+    .app__context {
+        margin-left: 24px;
+    }
+
+    .app__context h2 {
+        font-size: 23px;
+        width: 250px;
+    }
+
+    .app__context p {
+        line-height: 24px;
+        margin: 0 0 20px 0;
+        width: 250px;
+        font-size: 13px;
+    }
+
+    .app__buttons {
+        width: 130px;
+        margin-left: 0px;
+    }
+}
