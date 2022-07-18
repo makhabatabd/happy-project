@@ -1,0 +1,38 @@
+footer {
+    background-color: #F2F2F2;
+}
+
+.footer__inner {
+    padding: 126px 0px 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__inner img {
+    margin-bottom: 26px;
+}
+
+.footer__icon {
+    margin-right: 15px;
+}
+
+.footer__icons img:last-child {
+    margin-right: 0px;
+}
+
+.footer__icon:hover {
+    cursor: pointer;
+}
+
+.footer__icon:hover path {
+    fill: #5AB0FF;
+}
+
+
+@media screen and (max-width:$grid-breakpoints-lg) {
+    .footer__inner {
+        padding: 100px 0px 70px 0;
+    }
+}

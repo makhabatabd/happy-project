@@ -1,0 +1,65 @@
+.numbers {
+    background-color: #FF5437;
+    color: white;
+
+    &__inner {
+        padding: 80px 31px 100px 0px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+
+.number {
+
+    & h2 {
+        font-size: 96px;
+        line-height: 96px;
+        margin: 0;
+    }
+
+    & span {
+        display: block;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-top: 20px;
+
+    }
+}
+
+@media screen and (max-width:$grid-breakpoints-lg) {
+    .numbers__inner {
+        justify-content: center;
+    }
+
+    .number {
+
+        & h2 {
+            font-size: 75px;
+        }
+
+        & span {
+            margin-top: 10px;
+        }
+    }
+
+}
+
+
+@media screen and (max-width:$grid-breakpoints-xl) {
+    .numbers__inner {
+        padding: 80px 0px 100px 70px;
+    }
+
+    .number {
+        width: 292px;
+        margin-bottom: 20px;
+
+        & h2 {
+            font-size: 85px;
+        }
+    }
+
+}
