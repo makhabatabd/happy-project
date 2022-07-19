@@ -1,0 +1,134 @@
+.price {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    &__title {
+        font-size: 14px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 100px 0 5px 0;
+    }
+
+    &__info {
+        font-size: 32px;
+        margin: 0 0 14px 0;
+    }
+
+    &__text {
+        line-height: 24px;
+        font-size: 18px;
+        width: 54%;
+        margin: 0 auto 40px;
+    }
+
+    &__options {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-bottom: 96px;
+    }
+
+    &__option {
+        background-color: #F2F2F2;
+        border-radius: 20px;
+        width: 382px;
+    }
+}
+
+.option__title {
+    font-size: 18px;
+    padding: 49px 0 0 0;
+    margin: 0;
+}
+
+.option__price {
+    display: block;
+    font-size: 108px;
+    letter-spacing: 8px;
+    margin-bottom: 8px;
+    margin-top: -37px;
+}
+
+.option__time {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 0 0 20px 0;
+    color: #222222;
+}
+
+.option__button {
+    width: 129px;
+    border-radius: 4px;
+    padding: 11px 0;
+    color: white;
+    outline: none;
+    border: none;
+    margin-bottom: 50px;
+}
+
+.standard {
+    color: #0278ED;
+
+    & button {
+        background-color: #0278ED;
+    }
+}
+
+
+.premium {
+    color: #FF5437;
+
+    & button {
+        background-color: #FF5437;
+    }
+}
+
+.lifetime {
+    color: #FF9209;
+
+    & button {
+        background-color: #FF9209;
+    }
+}
+
+@media screen and (max-width:$grid-breakpoints-xl) {
+    .price__options {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 96px;
+    }
+
+    .price__option {
+        margin: 0 16px 16px 0;
+    }
+}
+
+@media screen and (max-width:$grid-breakpoints-sm) {
+    .price__option {
+        margin: 0 0px 16px 0;
+        width: 300px;
+    }
+
+    .price__title {
+        padding: 80px 0 5px 0;
+    }
+
+    .price__info {
+        font-size: 28px;
+        margin: 0 0 14px 0;
+    }
+
+    .price__text {
+        font-size: 15px;
+        width: 80%;
+    }
+
+    .option__price {
+        margin-top: -20px;
+        margin-bottom: 0px;
+    }
+}

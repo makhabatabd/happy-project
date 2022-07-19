@@ -1,0 +1,110 @@
+.mode {
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffff;
+    text-align: center;
+
+    &__title {
+        font-size: 14px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 100px 0 5px 0;
+    }
+
+    &__info {
+        font-size: 32px;
+        margin: 0 0 14px 0;
+    }
+
+    &__orange {
+        color: #FF9209;
+    }
+
+    &__text {
+        line-height: 24px;
+        font-size: 18px;
+        width: 67%;
+        margin: 0 auto 33px;
+    }
+
+    &__picture img {
+        width: 400px;
+        display: block;
+        margin: auto;
+    }
+
+    &__hr {
+        border: 2px solid #E5E5E5;
+        width: 64%;
+        margin: 0 auto 42px;
+        opacity: 1;
+    }
+
+    &__bottom {
+        padding-bottom: 159px;
+        display: flex;
+        justify-content: center;
+    }
+
+    @media screen and (max-width:$grid-breakpoints-sm) {
+        &__info {
+            font-size: 28px;
+        }
+
+        &__text {
+            font-size: 15px;
+            width: 80%;
+        }
+
+        &__picture img {
+            width: 300px;
+        }
+
+        &__hr {
+            width: 80%;
+        }
+
+        &__bottom {
+            padding-bottom: 129px;
+        }
+    }
+
+    @media screen and (max-width:$grid-breakpoints-xs) {
+        &__hr {
+            width: 96%;
+        }
+    }
+}
+
+.light__mode {
+    color: #222222;
+    background-color: #ffff;
+}
+
+.dark__mode {
+    color: #ffff;
+    background-color: #222222;
+}
+
+#light__div {
+    cursor: pointer;
+}
+
+#dark__div {
+    cursor: pointer;
+}
+
+.orange path {
+    fill: #FF9209;
+}
+
+.black path {
+    fill: #222222;
+}
+
+.white path {
+    fill: white;
+}
