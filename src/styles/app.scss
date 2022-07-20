@@ -19,6 +19,8 @@
         position: absolute;
         top: 15%;
         right: 16%;
+        height: 543px;
+        overflow-y: hidden;
 
         @media screen and (max-width:$grid-breakpoints-xl) {
             right: 2%;

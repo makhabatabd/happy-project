@@ -87,7 +87,7 @@
                             Store
                             right
                             now. Go check it out!</p>
-                        <button class="main__button app__buttons">Buy now</button>
+                        <button id="buy" class="main__button app__buttons">Buy now</button>
                         <button class="main__button app__buttons">Read more</button>
                     </div>
                     <div class="app__image">
@@ -208,8 +208,8 @@
         </section>
         <section class="mode" id="mode">
             <div class="comtainer">
-                <h4 class="mode__title">Dark Mode</h4>
-                <h5 class="mode__info">Also available in <span class="mode__orange">dark</span>.</h5>
+                <h4 class="mode__title"></h4>
+                <h5 class="mode__info">Also available in <span class="mode__orange"></span>.</h5>
                 <p class="mode__text">Don't get blinded when using the H(app)y app at night, just turn off the lights.
                     Lorem ipsum dolor
                     sit amet.</p>
@@ -258,19 +258,19 @@
                         <p class="option__title">Standard</p>
                         <span class="option__price">$9</span>
                         <p class="option__time">monthly</p>
-                        <button class="option__button">Buy Now</button>
+                        <button id="cheap" class="option__button">Buy Now</button>
                     </div>
                     <div class="price__option premium">
                         <p class="option__title">Premium</p>
                         <span class="option__price">$99</span>
                         <p class="option__time">anually</p>
-                        <button class="option__button">Buy Now</button>
+                        <button id="medium" class="option__button">Buy Now</button>
                     </div>
                     <div class="price__option lifetime">
                         <p class="option__title">Lifetime</p>
                         <span class="option__price">$149</span>
                         <p class="option__time">up front</p>
-                        <button class="option__button">Buy Now</button>
+                        <button id="expensive" class="option__button">Buy Now</button>
                     </div>
                 </div>
             </div>
@@ -303,32 +303,74 @@
             </div>
         </div>
     </footer>
-    <!-- <div class="modal" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Leave a request for the purchase of goods</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal__outter">
+        <div class="main__modal" id="modal">
+            <form id="form" action="">
+                <div class="close__button">
+                    <button id="close">
+                        <img src="./assets/media/close.png" alt="close button">
+                    </button>
                 </div>
-                <div class="modal-body">
-                    <input type="text">
-                    <input type="email">
-                    <span>Your plan</span>
-                    <input type="radio">Standard
-                    <input type="radio">Premium
-                    <input type="radio">Lifetime
+                <div class="modal__inner">
+                    <h3 class="modal__text">Leave a request for the purchase of goods</h3>
+                    <input class="modal__input" id="name" type="text" placeholder="name">
+                    <br />
+                    <label class="name__label" for="name">this field is reqiured*</label>
+                    <br />
+                    <input class="modal__input" id="email" type="email" placeholder="email">
+                    <br />
+                    <label class="email__label" for="email">this field is reqiured*</label>
+                    <br />
+                    <span class="modal__plan">Your plan</span>
+                    <input type="radio" name="plan">
+                    <label class="modal__radio radio__standard" id="standard" for="stadard">Standard</label>
+                    <br />
+                    <input type="radio" name="plan">
+                    <label class="modal__radio radio__premium" id="premium" for="premium">Premium</label>
+                    <br />
+                    <input type="radio" name="place">
+                    <label class="modal__radio radio__lifetime" id="lifetime" for="lifetime">Lifetime</label>
+                    <br />
+                    <p class="modal__info">How did you know about our app?</p>
+                    <div class="modal__checkboxes">
+                        <div class="checkbox">
+                            <label class="modal__checkbox" for="fb">
+                                <input type="checkbox" id="fb">
+                                <span id="checkbox__span"></span>
+                            </label>
+                            <label class="checkbox__name" for="fb">Facebook</label>
+                        </div>
+                        <div class="checkbox">
+                            <label class="modal__checkbox" for="insta">
+                                <input type="checkbox" id="insta">
+                                <span></span>
+                            </label>
+                            <label class="checkbox__name" for="insta">Instagram</label>
+                        </div>
+                        <div class="checkbox">
+                            <label for="youtube" class="modal__checkbox">
+                                <input type="checkbox" id="youtube">
+                                <span></span>
+                            </label>
+                            <label class="checkbox__name" for="youtube">Youtube</label>
+                        </div>
+                        <div class="checkbox">
+                            <label for="other" class="modal__checkbox">
+                                <input id="other" type="checkbox">
+                                <span></span>
+                            </label>
+                            <label class="checkbox__name" for="other">Other</label>
+                        </div>
+                    </div>
+                    <button class="modal__button" id="send">Send</button>
                 </div>
-                <div class="modal-footer">
-                    <p>How did you know about our app</p>
-                    <input type="checkbox"> Facebook
-                    <input type="checkbox"> Instagram
-                    <input type="checkbox"> Youtube
-                    <input type="checkbox"> Other
-                    <button type="button" class="btn btn-primary">Send</button>
+                <div class="modal__loading" id="loading">
+                    <img src="./assets/media/watch.svg" alt="watch">
+                    <span>Loading...</span>
                 </div>
-            </div>
+            </form>
         </div>
-    </div> -->
+    </div>
 </body>
 
 </html>
