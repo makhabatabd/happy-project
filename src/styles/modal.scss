@@ -1,23 +1,24 @@
 .modal__outter {
     position: fixed;
-    background-color: #00000055;
+    background-color: #00000097;
     width: 100vw;
     height: 100vh;
     display: none;
     inset: 0;
+    z-index: 50;
 }
 
 
 .main__modal {
     position: relative;
-    z-index: 11;
+    z-index: 110;
     width: 506px;
     background-color: white;
     border-radius: 4px;
     text-align: center;
     color: #000000;
     display: none;
-    margin: 20px auto;
+    margin: 70px auto;
 }
 
 .modal__inner {
@@ -233,10 +234,6 @@ input[type="checkbox"]:checked+span::after {
     background-color: transparent;
 }
 
-// button:disabled {
-//     background-color: #F2F2F2;
-//     color: #222222;
-// }
 
 .modal__loading {
     display: none;
@@ -269,7 +266,7 @@ input[type="checkbox"]:checked+span::after {
 
 @media screen and (max-width:$grid-breakpoints-xl) {
     .main__modal {
-        height: calc(100vh - 76px);
+        height: calc(100vh - 156px);
         overflow-y: auto;
         padding-bottom: 15px;
     }
@@ -278,7 +275,7 @@ input[type="checkbox"]:checked+span::after {
 @media screen and (max-width:$grid-breakpoints-md) {
     .main__modal {
         width: 433px;
-        height: calc(100vh - 130px);
+        height: calc(100vh - 225px);
         overflow-y: auto;
         padding-bottom: 15px;
     }
@@ -309,7 +306,7 @@ input[type="checkbox"]:checked+span::after {
 @media screen and (max-width:$grid-breakpoints-xs) {
     .main__modal {
         width: 303px;
-        height: calc(100vh - 165px);
+        height: calc(100vh - 205px);
         overflow-y: auto;
         padding-bottom: 15px;
     }

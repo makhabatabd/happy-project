@@ -1,3 +1,13 @@
+#header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: white;
+    z-index: 40;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
 .nav {
     padding: 23px 0;
 
@@ -155,4 +165,10 @@
             flex-direction: row;
         }
     }
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
 }

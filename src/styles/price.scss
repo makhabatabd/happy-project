@@ -69,6 +69,18 @@
     margin-bottom: 50px;
 }
 
+.option__button:hover {
+    opacity: 0.5;
+}
+
+.option__button:active {
+    transform: scale(0.98);
+}
+
+.option__button:focus {
+    border: 2px solid black;
+}
+
 .standard {
     color: #0278ED;
 
