@@ -11,8 +11,8 @@ const countdown = () => {
   const day = hour * 24;
 
   let textDay = Math.floor(gap / day);
-  const textHour = Math.floor((gap % day) / hour);
-  const textMinute = Math.floor((gap % hour) / minute);
+  let textHour = Math.floor((gap % day) / hour);
+  let textMinute = Math.floor((gap % hour) / minute);
   let textSecond = Math.floor((gap % minute) / second);
 
   if (textSecond < 10) textSecond = "0" + textSecond;

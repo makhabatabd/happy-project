@@ -119,7 +119,7 @@
 
 @media screen and (max-width:$grid-breakpoints-xs) {
     .count__inner {
-        padding: 104px 0 0 0;
+        padding: 44px 0 0 0;
     }
 
     .countdowns {
@@ -135,16 +135,18 @@
     .hour,
     .minute,
     .second {
-        font-size: 35px;
+        font-size: 42px;
         letter-spacing: 6px;
     }
 
     .count__info {
-        font-size: 26px;
+        font-size: 18px;
     }
 
     .count__title {
-        font-size: 21px;
+        font-size: 38px;
+        line-height: 42px;
+        padding-bottom: 17px;
     }
 
     .countdown h4 {
@@ -153,6 +155,6 @@
     }
 
     .countdowns {
-        padding: 30px 0 0 8px;
+        padding: 58px 0 0 8px;
     }
 }

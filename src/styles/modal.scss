@@ -266,7 +266,7 @@ input[type="checkbox"]:checked+span::after {
 
 @media screen and (max-width:$grid-breakpoints-xl) {
     .main__modal {
-        height: calc(100vh - 156px);
+        height: calc(100vh - 145px);
         overflow-y: auto;
         padding-bottom: 15px;
     }
@@ -275,7 +275,7 @@ input[type="checkbox"]:checked+span::after {
 @media screen and (max-width:$grid-breakpoints-md) {
     .main__modal {
         width: 433px;
-        height: calc(100vh - 225px);
+        height: calc(100vh - 186px);
         overflow-y: auto;
         padding-bottom: 15px;
     }
@@ -306,7 +306,7 @@ input[type="checkbox"]:checked+span::after {
 @media screen and (max-width:$grid-breakpoints-xs) {
     .main__modal {
         width: 303px;
-        height: calc(100vh - 205px);
+        height: calc(100vh - 187px);
         overflow-y: auto;
         padding-bottom: 15px;
     }

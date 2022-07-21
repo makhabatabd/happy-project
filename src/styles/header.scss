@@ -86,6 +86,12 @@
 
 }
 
+@media screen and (max-width:$grid-breakpoints-md) {
+    .nav__inner {
+        padding: 0 0 0 22px;
+    }
+}
+
 @media screen and (max-width:$grid-breakpoints-sm) {
     .nav__burger {
         display: block;
@@ -165,10 +171,4 @@
             flex-direction: row;
         }
     }
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%
 }
