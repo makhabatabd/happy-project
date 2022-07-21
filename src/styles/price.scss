@@ -60,24 +60,27 @@
 }
 
 .option__button {
-    width: 129px;
     border-radius: 4px;
-    padding: 11px 0;
     color: white;
     outline: none;
     border: none;
+}
+
+.option__buttons {
+    width: 129px;
+    padding: 11px 0;
     margin-bottom: 50px;
 }
 
-.option__button:hover {
+.option__buttons:hover {
     opacity: 0.5;
 }
 
-.option__button:active {
+.option__buttons:active {
     transform: scale(0.98);
 }
 
-.option__button:focus {
+.option__buttons:focus {
     border: 2px solid rgba(0, 0, 0, 0.281);
 }
 

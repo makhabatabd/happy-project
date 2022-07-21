@@ -50,7 +50,7 @@
     color: #FF5437;
     font-size: 12px;
     position: absolute;
-    top: 21%;
+    top: 22%;
     left: 20%;
     display: none;
 }
@@ -96,13 +96,19 @@ input[type="radio"] {
     border: 1px solid #0278ED;
 }
 
-.cheap {
+.cheap,
+.medium,
+.expensive {
+    position: relative;
+}
+
+.cheap input:checked+label {
     background-color: #0278ED;
     position: relative;
     color: white;
 }
 
-.cheap::before {
+.cheap input:checked+label::before {
     content: url(../assets/media/check.svg);
     width: 19px;
     height: 15px;
@@ -115,13 +121,13 @@ input[type="radio"] {
     border: 1px solid #FF5437;
 }
 
-.medium {
+.medium input:checked+label {
     background-color: #FF5437;
     position: relative;
     color: white;
 }
 
-.medium::before {
+.medium input:checked+label::before {
     content: url(../assets/media/check.svg);
     width: 19px;
     height: 15px;
@@ -134,13 +140,13 @@ input[type="radio"] {
     border: 1px solid #FF9209;
 }
 
-.expensive {
+.expensive input:checked+label {
     background-color: #FF9209;
     position: relative;
     color: white;
 }
 
-.expensive::before {
+.expensive input:checked+label::before {
     content: url(../assets/media/check.svg);
     width: 19px;
     height: 15px;
@@ -266,16 +272,24 @@ input[type="checkbox"]:checked+span::after {
 
 @media screen and (max-width:$grid-breakpoints-xl) {
     .main__modal {
-        height: calc(100vh - 145px);
+        height: calc(100vh - 90px);
         overflow-y: auto;
         padding-bottom: 15px;
+    }
+
+    .name__label {
+        top: 21%;
+    }
+
+    .email__label {
+        top: 28%;
     }
 }
 
 @media screen and (max-width:$grid-breakpoints-md) {
     .main__modal {
         width: 433px;
-        height: calc(100vh - 186px);
+        height: calc(100vh - 130px);
         overflow-y: auto;
         padding-bottom: 15px;
     }
@@ -306,7 +320,7 @@ input[type="checkbox"]:checked+span::after {
 @media screen and (max-width:$grid-breakpoints-xs) {
     .main__modal {
         width: 303px;
-        height: calc(100vh - 187px);
+        height: calc(100vh - 130px);
         overflow-y: auto;
         padding-bottom: 15px;
     }
