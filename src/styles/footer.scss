@@ -12,26 +12,26 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
 
-.footer__inner img {
-    margin-bottom: 26px;
+    & img {
+        margin-bottom: 26px;
+    }
 }
 
 .footer__icon {
     margin-right: 15px;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:hover path {
+        fill: #5AB0FF;
+    }
 }
 
 .footer__icons img:last-child {
     margin-right: 0px;
-}
-
-.footer__icon:hover {
-    cursor: pointer;
-}
-
-.footer__icon:hover path {
-    fill: #5AB0FF;
 }
 
 .insta__icon:hover path {

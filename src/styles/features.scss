@@ -84,7 +84,6 @@
         max-height: 92px;
         text-overflow: ellipsis;
         overflow: hidden;
-        // Addition lines for 2 line or multiline ellipsis
         display: -webkit-box !important;
         -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;

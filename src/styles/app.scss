@@ -59,12 +59,16 @@
         margin-left: 6px;
         margin-bottom: 14px;
     }
+
+    &__buttons:focus {
+        border: 2px solid #5AB0FF;
+    }
 }
 
 @media screen and (max-width:$grid-breakpoints-xs) {
     .app__inner {
         display: block;
-        padding: 80px 0;
+        padding: 50px 0;
     }
 
     .app__context {

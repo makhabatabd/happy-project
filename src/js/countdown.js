@@ -1,7 +1,7 @@
 const count = document.querySelector(".count");
 
 const countdown = () => {
-  const countDate = new Date("August 1, 2022 13:30:50").getTime();
+  const countDate = new Date("August 20, 2022 13:30:50").getTime();
   const now = new Date().getTime();
   const gap = countDate - now;
 

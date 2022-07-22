@@ -55,20 +55,21 @@
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
+
+    &:hover {
+        background-color: #4E4E4E;
+        color: white;
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }
+
+    &:focus {
+        outline: 2px solid #5AB0FF;
+    }
 }
 
-.main__button:hover {
-    background-color: #4E4E4E;
-    color: white;
-}
-
-.main__button:active {
-    transform: scale(0.98);
-}
-
-.main__button:focus {
-    outline: 2px solid #5AB0FF;
-}
 
 
 @media screen and (max-width:$grid-breakpoints-lg) {
@@ -155,6 +156,6 @@
 
 @media screen and (max-width:$grid-breakpoints-md) {
     .nav__inner {
-        padding: 0 0 0 22px;
+        padding: 0 19px 0 22px;
     }
 }
