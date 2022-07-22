@@ -74,19 +74,25 @@
 
     @media screen and (max-width:$grid-breakpoints-xs) {
         &__hr {
-            width: 96%;
+            width: 94%;
+        }
+
+        &__picture img {
+            width: 240px;
         }
     }
 }
 
 .light__mode {
     color: #222222;
-    background-color: #ffff;
+    background-color: #F2F2F2;
+    transition: 0.3s;
 }
 
 .dark__mode {
     color: #ffff;
     background-color: #222222;
+    transition: 0.3s;
 }
 
 #light__div {

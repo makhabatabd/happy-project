@@ -1,3 +1,7 @@
+#footer {
+    scroll-margin-top: 90px;
+}
+
 footer {
     background-color: #F2F2F2;
 }
@@ -30,9 +34,19 @@ footer {
     fill: #5AB0FF;
 }
 
+.insta__icon:hover path {
+    fill: #fb3958;
+}
+
 
 @media screen and (max-width:$grid-breakpoints-lg) {
     .footer__inner {
         padding: 100px 0px 70px 0;
+    }
+}
+
+@media screen and (max-width:$grid-breakpoints-sm) {
+    #footer {
+        scroll-margin-top: 70px;
     }
 }

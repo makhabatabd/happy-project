@@ -1,3 +1,7 @@
+#features {
+    scroll-margin-top: 90px;
+}
+
 .features {
     background-color: #222222;
     text-align: center;
@@ -59,11 +63,12 @@
     &__phone--context {
         background: #F2F2F2;
         position: relative;
+        bottom: 0;
+        left: 0;
         z-index: 10;
-        height: 197px;
+        min-height: 196px;
         box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
         margin-top: 293px;
-
     }
 
     &__phone--context h4 {
@@ -73,9 +78,17 @@
 
     &__phone--context p {
         font-size: 15px;
-        padding-bottom: 40px;
-        margin: 0 auto;
-        width: 70%;
+        padding-bottom: 2rem;
+        margin: 0 auto 0px;
+        width: 287px;
+        max-height: 92px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        // Addition lines for 2 line or multiline ellipsis
+        display: -webkit-box !important;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        white-space: normal;
     }
 
     &__calendar {
@@ -149,6 +162,10 @@
 }
 
 @media screen and (max-width:$grid-breakpoints-sm) {
+    #features {
+        scroll-margin-top: 70px;
+    }
+
     .features__phone:nth-child(3) {
         margin-right: 0px;
     }

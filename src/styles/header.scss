@@ -72,27 +72,6 @@
 
 
 @media screen and (max-width:$grid-breakpoints-lg) {
-    .nav__inner {
-        flex-direction: column;
-    }
-
-    .nav__item {
-        margin-right: 34px;
-    }
-
-    .nav__options {
-        margin-top: 15px;
-    }
-
-}
-
-@media screen and (max-width:$grid-breakpoints-md) {
-    .nav__inner {
-        padding: 0 0 0 22px;
-    }
-}
-
-@media screen and (max-width:$grid-breakpoints-sm) {
     .nav__burger {
         display: block;
     }
@@ -170,5 +149,12 @@
             padding: 0 26px 0 21px;
             flex-direction: row;
         }
+    }
+
+}
+
+@media screen and (max-width:$grid-breakpoints-md) {
+    .nav__inner {
+        padding: 0 0 0 22px;
     }
 }

@@ -1,3 +1,7 @@
+#numbers {
+    scroll-margin-top: 90px;
+}
+
 .numbers {
     background-color: #FF5437;
     color: white;
@@ -29,6 +33,27 @@
     }
 }
 
+@media screen and (max-width:$grid-breakpoints-xl) {
+    .numbers__inner {
+        padding: 60px 0px 73px 0px;
+    }
+
+    .number {
+        width: 292px;
+        margin-bottom: 20px;
+        text-align: center;
+
+        & h2 {
+            font-size: 85px;
+        }
+
+        & span {
+            text-align: center;
+        }
+    }
+
+}
+
 @media screen and (max-width:$grid-breakpoints-lg) {
     .numbers__inner {
         justify-content: center;
@@ -48,18 +73,8 @@
 }
 
 
-@media screen and (max-width:$grid-breakpoints-xl) {
-    .numbers__inner {
-        padding: 80px 0px 100px 70px;
+@media screen and (max-width:$grid-breakpoints-sm) {
+    #numbers {
+        scroll-margin-top: 70px;
     }
-
-    .number {
-        width: 292px;
-        margin-bottom: 20px;
-
-        & h2 {
-            font-size: 85px;
-        }
-    }
-
 }

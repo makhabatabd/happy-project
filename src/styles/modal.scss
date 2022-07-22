@@ -6,6 +6,7 @@
     display: none;
     inset: 0;
     z-index: 50;
+    overflow-y: auto;
 }
 
 
@@ -49,18 +50,19 @@
 .name__label {
     color: #FF5437;
     font-size: 12px;
-    position: absolute;
-    top: 22%;
-    left: 20%;
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 91px;
+    margin-bottom: -15px;
     display: none;
 }
 
 .email__label {
     color: #FF5437;
     font-size: 12px;
-    position: absolute;
-    top: 30%;
-    left: 20%;
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 91px;
     display: none;
 }
 
@@ -94,6 +96,7 @@ input[type="radio"] {
 
 .radio__standard {
     border: 1px solid #0278ED;
+    color: #0278ED;
 }
 
 .cheap,
@@ -119,6 +122,7 @@ input[type="radio"] {
 
 .radio__premium {
     border: 1px solid #FF5437;
+    color: #FF5437;
 }
 
 .medium input:checked+label {
@@ -138,6 +142,7 @@ input[type="radio"] {
 
 .radio__lifetime {
     border: 1px solid #FF9209;
+    color: #FF9209;
 }
 
 .expensive input:checked+label {
@@ -270,28 +275,17 @@ input[type="checkbox"]:checked+span::after {
 }
 
 
-@media screen and (max-width:$grid-breakpoints-xl) {
-    .main__modal {
-        height: calc(100vh - 90px);
-        overflow-y: auto;
-        padding-bottom: 15px;
-    }
-
-    .name__label {
-        top: 21%;
-    }
-
-    .email__label {
-        top: 28%;
-    }
-}
-
 @media screen and (max-width:$grid-breakpoints-md) {
     .main__modal {
         width: 433px;
-        height: calc(100vh - 130px);
-        overflow-y: auto;
-        padding-bottom: 15px;
+    }
+
+    .name__label {
+        margin-left: 70px;
+    }
+
+    .email__label {
+        margin-left: 70px;
     }
 
     .modal__text {
@@ -320,9 +314,6 @@ input[type="checkbox"]:checked+span::after {
 @media screen and (max-width:$grid-breakpoints-xs) {
     .main__modal {
         width: 303px;
-        height: calc(100vh - 130px);
-        overflow-y: auto;
-        padding-bottom: 15px;
     }
 
     .modal__radio {
@@ -335,5 +326,13 @@ input[type="checkbox"]:checked+span::after {
 
     .close__button {
         padding: 10px 3px 14px 0;
+    }
+
+    .name__label {
+        margin-left: 37px;
+    }
+
+    .email__label {
+        margin-left: 37px;
     }
 }

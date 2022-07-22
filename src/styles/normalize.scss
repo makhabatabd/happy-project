@@ -33,7 +33,7 @@ body {
     font-weight: 400;
     color: #222222;
 
-    @media screen and (max-width:$grid-breakpoints-sm) {
+    @media screen and (max-width:$grid-breakpoints-lg) {
         padding-top: 70px;
     }
 }
